@@ -16,6 +16,10 @@ header{
   border: 1px rgba(255, 255, 255, 0.397) solid;
   border-radius: 1rem;
   margin-top: 2rem;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .images img{
   height: 30px;
@@ -30,7 +34,7 @@ header{
   color: rgb(174, 189, 168);
   text-indent: 0.5rem;
   text-align: justify;
-  width: 500px;
+  width: 35rem;
   margin: 1rem 2rem 2rem 2rem;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.5rem;
@@ -47,4 +51,12 @@ button{
   font-weight: bold;
   background-color: rgb(88, 57, 57);
   margin: 1rem;
+}
+@media (max-width: 430px){
+  .about{
+    width: 100vw;
+  }
+  .about p{
+    width: 100vw;
+  }
 }
