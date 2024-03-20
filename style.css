@@ -34,12 +34,20 @@ nav{
   justify-content: center;
   border-radius: 50%;
   transition: transform 1s, background .5s ease, color 2s;
+  animation-name: logo;
+  animation-duration: 2s;
 }
 .logo:hover{
   transform: rotate(360deg);
   background-color: rgb(16, 15, 17);
   color: rgb(255, 255, 255);
 }
+@keyframes logo{
+  from{
+    transform: rotate(-360deg);
+  }
+}
+
 .div h1:hover{
   text-decoration: overline;
 }
@@ -83,7 +91,6 @@ ul li a:hover{
   justify-content: center;
   width: 200px;
   box-shadow: 0.2rem 0.2rem 2rem 0 black;
-  transition: transorm 3s;
   animation-name: sidebar;
   animation-duration: 1s;
 }
@@ -285,7 +292,7 @@ span{
 }
 .project img{
   animation-name: image;
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 @keyframes image{
   from{opacity: 0;}
